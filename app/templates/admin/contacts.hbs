@@ -1,4 +1,4 @@
-<h1>Invitations</h1>
+<h1>Contacts</h1>
 
 <table class="table table-bordered table-striped">
     <thead>
@@ -9,11 +9,11 @@
       </tr>
     </thead>
     <tbody>
-    {{#each model as |invitation|}}
+    {{#each model as |contact|}}
         <tr>
-            <th>{{invitation.id}}</th>
-            <td>{{invitation.email}}</td>
-            <td>{{invitation.message}}</td>
+            <th>{{contact.id}}</th>
+            <td>{{contact.email}}</td>
+            <td>{{contact.message}}</td>
         </tr>
     {{/each}}
 
