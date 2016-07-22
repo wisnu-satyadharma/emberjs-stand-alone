@@ -19,6 +19,8 @@ Router.map(function() {
   	this.route('new');
     this.route('edit', {path: 'libraries/:id/edit'});
   });
+  this.route('authors');
+  this.route('books');
 });
 
 export default Router;
