@@ -1,1 +1,30 @@
-{{outlet}}
+<h1>Books</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th class="vtop">Release Year</th>
+    <th class="vtop">Author</th>
+    <th class="vtop">Library</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each model as |book|}}
+    <tr>
+      <td>
+      	{{book.title}}
+      </td>
+      <td>
+      	{{book.releaseYear}}
+      </td>
+      <td>
+      	{{book.author.name}}
+      </td>
+      <td>
+      	{{book.library.name}} ({{book.library.address}} - {{book.library.phone}})
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table> 

@@ -11,10 +11,10 @@ export default Ember.Controller.extend({
 			var message = this.get('message');
 			var newContact = this.store.createRecord('contact', {email: email, message: message});
 			newContact.save().then(function(){
-				_that.set('responseMessage', `We got your message and we'll get in touch soon`);
+				_that.set('responseMessage', "We got your message and we'll get in touch soon");
 				_that.set('email', '');    
 				_that.set('message', '');    				
-			})
+			});
 		}
 	}
 });
