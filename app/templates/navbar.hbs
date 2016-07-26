@@ -26,6 +26,14 @@
                 {{#nav-link-to 'admin.invitations'}}<a href="">Invitations</a>{{/nav-link-to}}
                 {{#nav-link-to 'admin.contacts'}}<a href="">Contacts</a>{{/nav-link-to}}
                 {{#nav-link-to 'admin.seeder'}}<a href="">Seeder</a>{{/nav-link-to}}
+
+                {{#if session.isAuthenticated}}
+                  <li><a {{action 'invalidateSession'}}>Logout</a></li>
+
+                {{else}}
+                  {{#nav-link-to 'login'}}<a href="">Login</a>{{/nav-link-to}}
+                {{/if}}
+
               </ul>
           </li>
       </ul>
