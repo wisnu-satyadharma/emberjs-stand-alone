@@ -22,6 +22,7 @@ Router.map(function() {
   this.route('authors');
   this.route('books');
   this.route('login');
+  this.route('jquery-style');
 });
 
 export default Router;

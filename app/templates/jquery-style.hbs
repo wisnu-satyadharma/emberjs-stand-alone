@@ -1,0 +1,50 @@
+<h1>Jquery UI List</h1>
+
+<h2>Tabs</h2>
+{{#jqui-tabs}}
+    <ul>
+        <li><a href="#tabs-1">Part1</a></li>
+        <li><a href="#tabs-2">Part2</a></li>
+        <li><a href="#tabs-3">Part3</a></li>
+    </ul>
+    <div id="tabs-1">
+    	Part 1 Description
+    </div>
+    <div id="tabs-2">
+    	Part 2 Description
+    </div>
+    <div id="tabs-3">
+    	Part 3 Description
+    </div>
+{{/jqui-tabs}}
+
+<br/>
+
+<h2>Tabs</h2>
+{{#jqui-accordion}}
+<h3>Section 1</h3>
+<div>
+    <p>
+        Section 1 description
+    </p>
+</div>
+<h3>Section 2</h3>
+<div>
+    <p>
+        Section 2 description
+    </p>
+</div>
+<h3>Section 3</h3>
+<div>
+    <p>
+        Section 3 description
+    </p>
+</div>
+{{/jqui-accordion}}    
+
+<h2>Datepicker</h2>
+{{jqui-datepicker value=date2 }}
+
+<h2>autocomplete</h2>
+{{jqui-autocomplete value=text source=languages}} {{text}}
+
