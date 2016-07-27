@@ -6,7 +6,9 @@
   <label for="password">Password</label>
   {{input id='password' placeholder='Enter Password' type='password' value=password}}
   <button type="submit">Login</button>
-  {{#if errorMessage}}
-    <p>{{errorMessage}}</p>
-  {{/if}}
+  <div class="error">
+	  {{#if errorMessage}}
+	    <p>{{errorMessage}}</p>
+	  {{/if}}
+	</div>
 </form>
